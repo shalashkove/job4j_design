@@ -6,12 +6,11 @@ import java.util.NoSuchElementException;
 public class EvenIt implements Iterator<Integer> {
     private final int[] data;
     int point;
-    int next;
+    int next = -1;
 
     public EvenIt(final int[] numbers) {
         this.data = numbers;
         this.point = -1;
-        this.next = -1;
     }
 
     @Override

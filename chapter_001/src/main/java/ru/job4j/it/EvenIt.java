@@ -15,13 +15,12 @@ public class EvenIt implements Iterator<Integer> {
     @Override
     public boolean hasNext() {
         boolean result = false;
-        int marker = point;
-        while (marker < data.length) {
-            if (data[marker] % 2 == 0) {
-                    result = true;
-                    break;
+        while (point < data.length) {
+            if (data[point] % 2 == 0) {
+                result = true;
+                break;
             }
-            marker++;
+            point++;
         }
         return result;
     }
@@ -30,12 +29,6 @@ public class EvenIt implements Iterator<Integer> {
     public Integer next() {
         if (!hasNext()) {
             throw new NoSuchElementException();
-        }
-        while (point < data.length) {
-            if (data[point] % 2 == 0) {
-                break;
-            }
-            point++;
         }
         return data[point++];
     }

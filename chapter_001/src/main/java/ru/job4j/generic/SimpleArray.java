@@ -1,23 +1,12 @@
 package ru.job4j.generic;
 
-import java.util.Collections;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 public class SimpleArray<T> implements Iterable<T> {
 
-//    Также, реализуйте интерфейс Iterable<T> - метод iterator() возвращает итератор, предназначенный для обхода
-//      данной структуры.
-
-//    Объект должен принимать количество ячеек. Структура не должна быть динамической.
-//            Примечание:
-//    В методах, где используется индекс нужно делать валидацию. Индекс должен находиться в рамках добавленных элементов.
-//      Например, у вас есть хранилище из 10 элементов. Вы добавили 3 элемента. Каким может быть индекс? [0, 2].
-//          Для проверки индекса используйте метод Objects.checkIndex.
-//
-
     private final T[] data;
-    int point;
+    private int point;
 
     public SimpleArray(int size) {
         if (size <= 0) {
@@ -45,11 +34,9 @@ public class SimpleArray<T> implements Iterable<T> {
         if (!checkIndex(index)) {
             throw new NoSuchElementException();
         }
-        while (index < this.point - 1) {
-            this.data[index] = this.data[index + 1];
-            index++;
-        }
-        data[index] = null;
+        System.arraycopy(this.data, index + 1, this.data, index, this.data.length - index - 1);
+        this.data[point] = null;
+        point--;
     }
 
     public T get(int index) {
@@ -65,14 +52,13 @@ public class SimpleArray<T> implements Iterable<T> {
 
     @Override
     public Iterator<T> iterator() {
-        //Iterator<T> result = Collections.emptyIterator();
         Iterator<T> result = new Iterator<T>() {
             private int pointer = -1;
 
             @Override
             public boolean hasNext() {
                 boolean result = false;
-                if ((pointer + 1 < data.length) && (data[pointer + 1] != null)) {
+                if (pointer + 1 < data.length) {
                     result = true;
                 }
                 return result;
@@ -86,7 +72,6 @@ public class SimpleArray<T> implements Iterable<T> {
                 return data[++pointer];
             }
         };
-
         return result;
     }
 }

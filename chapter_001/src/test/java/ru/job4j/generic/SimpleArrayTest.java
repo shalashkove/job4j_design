@@ -1,8 +1,6 @@
 package ru.job4j.generic;
 
-import org.junit.Before;
 import org.junit.Test;
-import ru.job4j.it.EvenIt;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
@@ -87,19 +85,14 @@ public class SimpleArrayTest {
         assertThat(it.next(), is("Test2"));
     }
 
-    @Test(expected = NoSuchElementException.class)
+    @Test
     public void shouldReturnEvenNumbersSequentially() {
         SimpleArray<String> simpleArray = new SimpleArray<>(10);
         simpleArray.add("Test1");
         simpleArray.add("Test2");
         Iterator<String> it = simpleArray.iterator();
-        assertThat(it.hasNext(), is(true));
         assertThat(it.next(), is("Test1"));
-        assertThat(it.hasNext(), is(true));
         assertThat(it.next(), is("Test2"));
-        assertThat(it.hasNext(), is(false));
-        it.next();
+        assertThat(it.next(), is(nullValue()));
     }
-
-
 }

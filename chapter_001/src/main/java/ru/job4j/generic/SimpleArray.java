@@ -24,23 +24,27 @@ public class SimpleArray<T> implements Iterable<T> {
     }
 
     public void set(int index, T model) {
-        if (!checkIndex(index)) {
+        if (!checkIndex(index) || index >= this.point) {
             throw new NoSuchElementException();
         }
         this.data[index] = model;
     }
 
     public void remove(int index) {
-        if (!checkIndex(index)) {
+        if (!checkIndex(index) || index >= this.point) {
             throw new NoSuchElementException();
         }
-        System.arraycopy(this.data, index + 1, this.data, index, this.data.length - index - 1);
-        this.data[point] = null;
-        point--;
+        if (index == point - 1) {
+            this.data[index] = null;
+            point--;
+        } else {
+            System.arraycopy(this.data, index + 1, this.data, index, this.point - index - 1);
+            this.data[--point] = null;
+        }
     }
 
     public T get(int index) {
-        if (!checkIndex(index)) {
+        if (!checkIndex(index) || index >= this.point) {
             throw new NoSuchElementException();
         }
         return this.data[index];
@@ -58,7 +62,7 @@ public class SimpleArray<T> implements Iterable<T> {
             @Override
             public boolean hasNext() {
                 boolean result = false;
-                if (pointer + 1 < data.length) {
+                if (pointer + 1 < point) {
                     result = true;
                 }
                 return result;

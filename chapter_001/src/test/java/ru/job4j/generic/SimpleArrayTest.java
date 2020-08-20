@@ -11,12 +11,12 @@ import static org.junit.Assert.*;
 
 public class SimpleArrayTest {
 
-    @Test(expected = ArrayIndexOutOfBoundsException.class)
+    @Test(expected = IndexOutOfBoundsException.class)
     public void whenZeroThenAIBExeption() {
         SimpleArray<String> simpleArray = new SimpleArray<>(0);
     }
 
-    @Test(expected = ArrayIndexOutOfBoundsException.class)
+    @Test(expected = IndexOutOfBoundsException.class)
     public void whenMinusThenAIBExeption() {
         SimpleArray<Integer> simpleArray = new SimpleArray<>(-1);
     }
@@ -37,7 +37,7 @@ public class SimpleArrayTest {
         assertThat(simpleArray.get(1), is("Test2"));
     }
 
-    @Test(expected = ArrayIndexOutOfBoundsException.class)
+    @Test(expected = IndexOutOfBoundsException.class)
     public void whenOverElementsThenAIBExeption() {
         SimpleArray<String> simpleArray = new SimpleArray<>(2);
         simpleArray.add("Test1");
@@ -53,7 +53,7 @@ public class SimpleArrayTest {
         assertThat(simpleArray.get(0), is("Test2"));
     }
 
-    @Test(expected = NoSuchElementException.class)
+    @Test(expected = IndexOutOfBoundsException.class)
     public void whenOverElementsSetThenNSEExeption() {
         SimpleArray<String> simpleArray = new SimpleArray<>(2);
         simpleArray.add("Test1");
@@ -61,7 +61,7 @@ public class SimpleArrayTest {
         simpleArray.set(2, "Test3");
     }
 
-    @Test(expected = NoSuchElementException.class)
+    @Test(expected = IndexOutOfBoundsException.class)
     public void whenRemoveThenRightRemoved() {
         SimpleArray<String> simpleArray = new SimpleArray<>(4);
         simpleArray.add("Test1");
@@ -75,7 +75,7 @@ public class SimpleArrayTest {
         simpleArray.get(3);
     }
 
-    @Test(expected = NoSuchElementException.class)
+    @Test(expected = IndexOutOfBoundsException.class)
     public void whenRemoveLastThenRightResult() {
         SimpleArray<String> simpleArray = new SimpleArray<>(10);
         simpleArray.add("Test1");
@@ -87,7 +87,7 @@ public class SimpleArrayTest {
         simpleArray.get(2);
     }
 
-    @Test(expected = NoSuchElementException.class)
+    @Test(expected = IndexOutOfBoundsException.class)
     public void whenOutOfIndexRemovedThenNSEExeption() {
         SimpleArray<String> simpleArray = new SimpleArray<>(10);
         simpleArray.add("Test1");
@@ -107,7 +107,7 @@ public class SimpleArrayTest {
         assertThat(it.next(), is("Test2"));
     }
 
-    @Test(expected = NoSuchElementException.class)
+    @Test(expected = IndexOutOfBoundsException.class)
     public void whenOverIndexSetThenNSEExeption() {
         SimpleArray<String> simpleArray = new SimpleArray<>(10);
         simpleArray.add("Test1");
@@ -115,7 +115,7 @@ public class SimpleArrayTest {
         simpleArray.set(2, "Test3");
     }
 
-    @Test(expected = NoSuchElementException.class)
+    @Test(expected = IndexOutOfBoundsException.class)
     public void whenOverIndexGetThenNSEExeption() {
         SimpleArray<String> simpleArray = new SimpleArray<>(10);
         simpleArray.add("Test1");

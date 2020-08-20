@@ -10,29 +10,29 @@ public class SimpleArray<T> implements Iterable<T> {
 
     public SimpleArray(int size) {
         if (size <= 0) {
-            throw new ArrayIndexOutOfBoundsException();
+            throw new IndexOutOfBoundsException();
         }
         this.data = (T[]) new Object[size];
         this.point = 0;
     }
 
     public void add(T model) {
-        if (!checkIndex(this.point)) {
-            throw new ArrayIndexOutOfBoundsException();
+        if (this.point >= this.data.length) {
+            throw new IndexOutOfBoundsException();
         }
         this.data[point++] = model;
     }
 
     public void set(int index, T model) {
-        if (!checkIndex(index) || index >= this.point) {
-            throw new NoSuchElementException();
+        if (!checkIndex(index)) {
+            throw new IndexOutOfBoundsException();
         }
         this.data[index] = model;
     }
 
     public void remove(int index) {
-        if (!checkIndex(index) || index >= this.point) {
-            throw new NoSuchElementException();
+        if (!checkIndex(index)) {
+            throw new IndexOutOfBoundsException();
         }
         if (index == point - 1) {
             this.data[index] = null;
@@ -44,14 +44,14 @@ public class SimpleArray<T> implements Iterable<T> {
     }
 
     public T get(int index) {
-        if (!checkIndex(index) || index >= this.point) {
-            throw new NoSuchElementException();
+        if (!checkIndex(index)) {
+            throw new IndexOutOfBoundsException();
         }
         return this.data[index];
     }
 
     private boolean checkIndex(int index) {
-        return index >= 0 && index < this.data.length;
+        return index >= 0 && index < this.point;
     }
 
     @Override

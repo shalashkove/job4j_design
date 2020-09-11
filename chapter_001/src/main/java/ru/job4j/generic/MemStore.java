@@ -16,7 +16,7 @@ public final class MemStore<T extends Base> implements Store<T> {
     public int findIndex(String id) {
         int result = -1;
         for (int index = 0; index != mem.size(); index++) {
-            if (id.equals(mem.get(index))) {
+            if (id.equals(mem.get(index).getId())) {
                 result = index;
                 break;
             }

@@ -76,4 +76,18 @@ public class DeleteFirstLinkedTest {
         linked.deleteLast();
         linked.deleteLast();
     }
+
+    @Test
+    public void whenFirstDelThenRightResult() {
+        ForwardLinked<String> linked = new ForwardLinked<>();
+        linked.addFirst("Test1");
+        linked.addFirst("Test2");
+        linked.addFirst("Test3");
+        String result = linked.deleteFirst();
+        assertThat(result, is("Test3"));
+        result = linked.deleteFirst();
+        assertThat(result, is("Test2"));
+        result = linked.deleteFirst();
+        assertThat(result, is("Test1"));
+    }
 }

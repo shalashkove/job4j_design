@@ -8,25 +8,12 @@ public class SimpleQueue<T> {
 
     public T poll() {
         T result = null;
-        T var;
-        boolean inHasElement = true;
-        while (inHasElement) {
-            try {
-                var = in.pop();
-                out.push(var);
-            } catch (NoSuchElementException e) {
-                inHasElement = false;
-            }
+        while (!in.isEmpty()) {
+                out.push(in.pop());
         }
         result = out.pop();
-        boolean outHasElement = true;
-        while (outHasElement) {
-            try {
-                var = out.pop();
-                in.push(var);
-            } catch (NoSuchElementException e) {
-                outHasElement = false;
-            }
+        while (!out.isEmpty()) {
+                in.push(out.pop());
         }
         return result;
     }

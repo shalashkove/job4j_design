@@ -90,4 +90,29 @@ public class DeleteFirstLinkedTest {
         result = linked.deleteFirst();
         assertThat(result, is("Test1"));
     }
+
+    @Test
+    public void whenEmptyThenIsEmpty() {
+        ForwardLinked<String> linked = new ForwardLinked<>();
+        linked.addFirst("Test1");
+        linked.deleteLast();
+        assertThat(linked.isEmpty(), is(true));
+    }
+
+    @Test
+    public void when3Add2DeleteThenNotEmpty() {
+        ForwardLinked<String> linked = new ForwardLinked<>();
+        linked.addFirst("Test1");
+        linked.addFirst("Test2");
+        linked.addFirst("Test3");
+        linked.deleteLast();
+        linked.deleteLast();
+        assertThat(linked.isEmpty(), is(false));
+    }
+
+    @Test
+    public void whenFullEmptyThenIsEmpty() {
+        ForwardLinked<String> linked = new ForwardLinked<>();
+        assertThat(linked.isEmpty(), is(true));
+    }
 }

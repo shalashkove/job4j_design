@@ -123,7 +123,9 @@ public class ForwardLinked<T> implements Iterable<T> {
     }
 
     public void revert() {
-        //TODO impl reverts of linked list.
+        if (head == null) {
+            throw new NoSuchElementException();
+        }
         Node<T> previousNode = null;
         Node<T> currentNode = head;
         Node<T> nextNode = head.next;

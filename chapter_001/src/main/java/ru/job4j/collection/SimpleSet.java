@@ -4,17 +4,10 @@ import java.util.*;
 
 public class SimpleSet<T> implements Iterable<T> {
 
-    private final static int DEFAULT_CAPACITY = 3;
-    private int modCount;
-    private int size;
-    private int capacity;
-    private Object[] container;
+    private SimpleArray<T> simpleArray;
 
     public SimpleSet() {
-        this.modCount = 0;
-        this.size = 0;
-        this.capacity = DEFAULT_CAPACITY;
-        this.container = new Object[DEFAULT_CAPACITY];
+        this.simpleArray = new SimpleArray<T>();
     }
 
     public boolean add(T model) {
@@ -22,25 +15,17 @@ public class SimpleSet<T> implements Iterable<T> {
         if (checkDublicate(model)) {
             result = false;
         } else {
-            modCount++;
-            if (size == capacity) {
-                grow();
-            }
-            container[size++] = model;
+            simpleArray.add(model);
             result = true;
         }
         return result;
     }
 
-    private void grow() {
-        capacity = capacity * 2;
-        container = Arrays.copyOf(container, capacity);
-    }
-
     private boolean checkDublicate(T model) {
         boolean result = false;
-        for (int i = 0; i != size; i++) {
-            if (container[i].equals(model)) {
+        Iterator<T> itr = simpleArray.iterator();
+        while (itr.hasNext()) {
+            if (itr.next().equals(model)) {
                 result = true;
             }
         }
@@ -49,30 +34,7 @@ public class SimpleSet<T> implements Iterable<T> {
 
     @Override
     public Iterator<T> iterator() {
-        return new SimpleSet.Itr();
-    }
-
-    private class Itr implements Iterator<T> {
-        int cursor;
-        int lastRet = -1;
-        int expectedModCount = modCount;
-
-        @Override
-        public boolean hasNext() {
-            return cursor != size;
-        }
-
-        @Override
-        public T next() {
-            if (modCount != expectedModCount) {
-                throw new ConcurrentModificationException();
-            }
-            if (cursor >= size) {
-                throw new NoSuchElementException();
-            }
-            lastRet = cursor;
-            cursor++;
-            return (T) container[lastRet];
-        }
+        //return new SimpleSet.Itr();
+        return simpleArray.iterator();
     }
 }

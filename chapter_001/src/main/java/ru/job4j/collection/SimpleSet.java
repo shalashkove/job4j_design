@@ -25,8 +25,9 @@ public class SimpleSet<T> implements Iterable<T> {
         boolean result = false;
         Iterator<T> itr = simpleArray.iterator();
         while (itr.hasNext()) {
-            if (itr.next().equals(model)) {
+            if (Objects.equals(itr.next(), model)) {
                 result = true;
+                break;
             }
         }
         return result;
@@ -34,7 +35,6 @@ public class SimpleSet<T> implements Iterable<T> {
 
     @Override
     public Iterator<T> iterator() {
-        //return new SimpleSet.Itr();
         return simpleArray.iterator();
     }
 }

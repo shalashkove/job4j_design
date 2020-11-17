@@ -17,18 +17,8 @@ public class User {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        User user = (User) o;
-        return children == user.children &&
-                Objects.equals(name, user.name) &&
-                Objects.equals(birthday, user.birthday);
-    }
-
-    @Override
     public int hashCode() {
-        return Objects.hash(name, children, birthday);
+        return ((31 + name.hashCode() * 31) * 31 + children * 31) * 31 + birthday.hashCode() * 31;
     }
 
     public static void main(String[] args) {
@@ -37,9 +27,6 @@ public class User {
         Map<User, Object> mapa = Map.of(
                 user1, new Object(),
                 user2, new Object());
-//        Map<User, Object> mapa = new HashMap<>();
-//        mapa.put(user1, new Object());
-//        mapa.put(user2, new Object());
         System.out.println(mapa);
     }
 }

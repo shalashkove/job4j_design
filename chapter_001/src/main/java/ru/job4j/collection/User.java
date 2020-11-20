@@ -17,9 +17,23 @@ public class User {
     }
 
     @Override
-    public int hashCode() {
-        return ((31 + name.hashCode() * 31) * 31 + children * 31) * 31 + birthday.hashCode() * 31;
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        User user = (User) o;
+        return children == user.children
+                && Objects.equals(name, user.name)
+                && Objects.equals(birthday, user.birthday);
     }
+
+//    @Override
+//    public int hashCode() {
+//        return ((31 + name.hashCode() * 31) * 31 + children * 31) * 31 + birthday.hashCode() * 31;
+//    }
 
     public static void main(String[] args) {
         User user1 = new User("name1", 1, new GregorianCalendar(1975, Calendar.JANUARY, 1));

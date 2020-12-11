@@ -77,8 +77,10 @@ public class SimpleHashMap<K, V> implements Iterable<SimpleHashMap.Node<K, V>>  
             growTable();
         }
         result = insertNode(key, value);
-        size++;
-        modCount++;
+        if (result) {
+            size++;
+            modCount++;
+        }
         return result;
     }
 
@@ -91,7 +93,7 @@ public class SimpleHashMap<K, V> implements Iterable<SimpleHashMap.Node<K, V>>  
             result = true;
         } else {
             while (linkNode.getNext() != null) {
-                if (key.equals(linkNode.getKey())) {
+                if (Objects.equals(key, linkNode.getKey())) {
                     return result;
                 }
                 linkNode = linkNode.getNext();
@@ -135,13 +137,13 @@ public class SimpleHashMap<K, V> implements Iterable<SimpleHashMap.Node<K, V>>  
         Node<K, V> varNode = (Node<K, V>) table[basket];
         if (varNode != null) {
             do {
-                if (key.equals(varNode.getKey())) {
+                if (Objects.equals(key, varNode.getKey())) {
                     result = varNode.getValue();
                     break;
                 }
                 varNode = varNode.next;
             } while (varNode.next != null);
-            if (key.equals(varNode.getKey())) {
+            if (Objects.equals(key, varNode.getKey())) {
                 result = varNode.getValue();
             }
         }
@@ -155,14 +157,14 @@ public class SimpleHashMap<K, V> implements Iterable<SimpleHashMap.Node<K, V>>  
         Node<K, V> currentNode = (Node<K, V>) table[basket];
         if (currentNode != null) {
             if (currentNode.getNext() == null
-                    && key.equals(currentNode.getKey())) {
+                    && Objects.equals(key, currentNode.getKey())) {
                 table[basket] = null;
                 result = true;
                 size--;
                 modCount++;
             } else {
                 while (currentNode.getNext() != null) {
-                    if (key.equals(currentNode.getKey())) {
+                    if (Objects.equals(key, currentNode.getKey())) {
                         if (lastNode == null) {
                             table[basket] = currentNode.getNext();
                         } else {

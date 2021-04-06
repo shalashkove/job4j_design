@@ -11,7 +11,7 @@ public class ResultFile {
                 for (int j = 0; j != result[i].length; j++) {
                     out.write(((Integer) result[i][j]).toString().getBytes());
                 }
-                out.write("\n".getBytes());
+                out.write(System.lineSeparator().getBytes());
             }
         } catch (Exception e) {
             e.printStackTrace();

@@ -17,12 +17,20 @@ public class Config {
     public void load() {
         try (BufferedReader read = new BufferedReader(new FileReader(this.path))) {
             read.lines().forEach(line -> {
-                String[] parsData = line.split("=");
-                if (!line.equals("") && !line.startsWith("#") && parsData.length == 2) {
-                        values.put(parsData[0], parsData[1]);
+                if (!line.equals("") && !line.startsWith("#")) {
+                    String[] parsData = line.split("=");
+                    if (parsData.length != 2) {
+                        throw new IllegalArgumentException();
+                    }
+                    if (parsData[0].length() == 0 || parsData[1].length() == 0) {
+                        throw new IllegalArgumentException();
+                    }
+                    values.put(parsData[0], parsData[1]);
                 }
                 return;
             });
+        } catch (IllegalArgumentException e) {
+            throw e;
         } catch (Exception e) {
             e.printStackTrace();
         }

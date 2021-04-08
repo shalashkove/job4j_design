@@ -12,7 +12,7 @@ import static org.junit.Assert.assertThat;
 public class ConfigTest {
 
     @Test
-    public void whenPairWithoutComment() {
+    public void whenPairWithoutComment() throws Exception {
         String path = "./data/pair_without_comment1.properties";
         Config config = new Config(path);
         config.load();
@@ -20,14 +20,14 @@ public class ConfigTest {
     }
 
     @Test(expected = IllegalArgumentException.class)
-    public void whenWrongKeyThenIAE() {
+    public void whenWrongKeyThenIAE() throws Exception {
         String path = "./data/pair_without_comment2.properties";
         Config config = new Config(path);
         config.load();
     }
 
     @Test(expected = IllegalArgumentException.class)
-    public void whenWrongValueThenIAE() {
+    public void whenWrongValueThenIAE() throws Exception {
         String path = "./data/pair_without_comment3.properties";
         Config config = new Config(path);
         config.load();

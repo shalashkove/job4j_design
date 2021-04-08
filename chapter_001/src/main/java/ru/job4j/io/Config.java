@@ -14,7 +14,7 @@ public class Config {
         this.path = path;
     }
 
-    public void load() {
+    public void load() throws Exception {
         try (BufferedReader read = new BufferedReader(new FileReader(this.path))) {
             read.lines().forEach(line -> {
                 if (!line.equals("") && !line.startsWith("#")) {
@@ -29,10 +29,8 @@ public class Config {
                 }
                 return;
             });
-        } catch (IllegalArgumentException e) {
-            throw e;
         } catch (Exception e) {
-            e.printStackTrace();
+            throw e;
         }
     }
 

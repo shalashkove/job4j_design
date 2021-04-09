@@ -1,6 +1,8 @@
 package ru.job4j.io;
 
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.TemporaryFolder;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -10,13 +12,15 @@ import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
 
 public class AnalizyTest {
+    @Rule
+    public TemporaryFolder folder = new TemporaryFolder();
 
     @Test
-    public void when2PeriodsThen2Records() {
+    public void when2PeriodsThen2Records() throws IOException {
         Analizy analizy = new Analizy();
         String source = "./data/server1.log";
-        String target = "./data/unavailable1.csv";
-        analizy.unavailable(source, target);
+        File target = folder.newFile("target.txt");
+        analizy.unavailable(source, target.getAbsolutePath());
         List<String> result = new ArrayList<>();
         try (BufferedReader in = new BufferedReader(new FileReader(target))) {
             in.lines().forEach(line -> result.add(line));
@@ -29,11 +33,11 @@ public class AnalizyTest {
     }
 
     @Test
-    public void whenEptyFileThenNoRecords() {
+    public void whenEptyFileThenNoRecords() throws IOException {
         Analizy analizy = new Analizy();
         String source = "./data/server2.log";
-        String target = "./data/unavailable2.csv";
-        analizy.unavailable(source, target);
+        File target = folder.newFile("target.txt");
+        analizy.unavailable(source, target.getAbsolutePath());
         List<String> result = new ArrayList<>();
         try (BufferedReader in = new BufferedReader(new FileReader(target))) {
             in.lines().forEach(line -> result.add(line));
@@ -45,11 +49,11 @@ public class AnalizyTest {
     }
 
     @Test
-    public void whenUnavailableOnlyThen1Record() {
+    public void whenUnavailableOnlyThen1Record() throws IOException {
         Analizy analizy = new Analizy();
         String source = "./data/server3.log";
-        String target = "./data/unavailable3.csv";
-        analizy.unavailable(source, target);
+        File target = folder.newFile("target.txt");
+        analizy.unavailable(source, target.getAbsolutePath());
         List<String> result = new ArrayList<>();
         try (BufferedReader in = new BufferedReader(new FileReader(target))) {
             in.lines().forEach(line -> result.add(line));
@@ -61,11 +65,11 @@ public class AnalizyTest {
     }
 
     @Test
-    public void whenNoUnavailableThenNoRecords() {
+    public void whenNoUnavailableThenNoRecords() throws IOException {
         Analizy analizy = new Analizy();
         String source = "./data/server4.log";
-        String target = "./data/unavailable4.csv";
-        analizy.unavailable(source, target);
+        File target = folder.newFile("target.txt");
+        analizy.unavailable(source, target.getAbsolutePath());
         List<String> result = new ArrayList<>();
         try (BufferedReader in = new BufferedReader(new FileReader(target))) {
             in.lines().forEach(line -> result.add(line));
@@ -77,11 +81,11 @@ public class AnalizyTest {
     }
 
     @Test
-    public void whenLastUnavailableThen1Record() {
+    public void whenLastUnavailableThen1Record() throws IOException {
         Analizy analizy = new Analizy();
         String source = "./data/server5.log";
-        String target = "./data/unavailable5.csv";
-        analizy.unavailable(source, target);
+        File target = folder.newFile("target.txt");
+        analizy.unavailable(source, target.getAbsolutePath());
         List<String> result = new ArrayList<>();
         try (BufferedReader in = new BufferedReader(new FileReader(target))) {
             in.lines().forEach(line -> result.add(line));

@@ -14,11 +14,28 @@ public class Config {
         this.path = path;
     }
 
-    public void load() {
+    public void load() throws Exception {
+        try (BufferedReader read = new BufferedReader(new FileReader(this.path))) {
+            read.lines().forEach(line -> {
+                if (!line.equals("") && !line.startsWith("#")) {
+                    String[] parsData = line.split("=");
+                    if (parsData.length != 2) {
+                        throw new IllegalArgumentException();
+                    }
+                    if (parsData[0].length() == 0 || parsData[1].length() == 0) {
+                        throw new IllegalArgumentException();
+                    }
+                    values.put(parsData[0], parsData[1]);
+                }
+                return;
+            });
+        } catch (Exception e) {
+            throw e;
+        }
     }
 
     public String value(String key) {
-        throw new UnsupportedOperationException("Don't impl this method yet!");
+        return values.get(key);
     }
 
     @Override
@@ -35,5 +52,4 @@ public class Config {
     public static void main(String[] args) {
         System.out.println(new Config("app.properties"));
     }
-
 }

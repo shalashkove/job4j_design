@@ -25,12 +25,8 @@ public class Pack {
         return result;
     }
 
-    public static void main(String[] args) {
-        Pack pack = new Pack();
-        if (!pack.validate(args)) {
-            throw new IllegalArgumentException("Wrong arguments format. "
-                    + "Use format: java -jar pack.jar -d=VALUE -e=VALUE -o=VALUE.");
-        }
+    public static List<File> search(Pack pack) {
+        List<File> result = new ArrayList<>();
         Path sourceDirectory = Paths.get(pack.argsName.get("d"));
         List<Path> zippedPaths = null;
         try {
@@ -39,10 +35,19 @@ public class Pack {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        List<File> zippedFiles = new ArrayList<>();
         for (Path path : zippedPaths) {
-            zippedFiles.add(path.toFile());
+            result.add(path.toFile());
         }
+        return result;
+    }
+
+    public static void main(String[] args) {
+        Pack pack = new Pack();
+        if (!pack.validate(args)) {
+            throw new IllegalArgumentException("Wrong arguments format. "
+                    + "Use format: java -jar pack.jar -d=VALUE -e=VALUE -o=VALUE.");
+        }
+        List<File> zippedFiles = Pack.search(pack);
         File outputFile = new File(pack.argsName.get("o"));
         Zip zip = new Zip();
         zip.packFiles(zippedFiles, outputFile);

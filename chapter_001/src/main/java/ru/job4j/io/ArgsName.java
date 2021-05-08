@@ -1,6 +1,6 @@
 package ru.job4j.io;
 
-/* test */
+/* test + test */
 
 import java.util.HashMap;
 import java.util.Map;

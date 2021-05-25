@@ -20,29 +20,36 @@ public class ConsoleChat {
     }
 
     public void run() {
+        boolean isWorking = true;
+        boolean isStopped = false;
+        List<String> outList = new ArrayList<>();
+        while (isWorking) {
+            Scanner in = new Scanner(System.in);
+            System.out.print("Введите вопрос: ");
+            String question = in.nextLine();
+                //bw.write(question + System.lineSeparator());
+            outList.add(question);
+            if (question.equals(OUT)) {
+                isWorking = false;
+            }
+            if (question.equals(STOP)) {
+                isStopped = true;
+            }
+            if (question.equals(CONTINUE)) {
+                isStopped = false;
+            }
+            if (isWorking && !isStopped) {
+                String answer = takeAnswer();
+                System.out.println("Бот отвечает: " + answer);
+                    //bw.write(answer + System.lineSeparator());
+                outList.add(answer);
+            }
+        }
         try (BufferedWriter bw = new BufferedWriter(
                 new FileWriter(path, Charset.forName("WINDOWS-1251"), true))) {
-            boolean isWorking = true;
-            boolean isStopped = false;
-            while (isWorking) {
-                Scanner in = new Scanner(System.in);
-                System.out.print("Введите вопрос: ");
-                String question = in.nextLine();
-                bw.write(question + System.lineSeparator());
-                if (question.equals(OUT)) {
-                    isWorking = false;
-                }
-                if (question.equals(STOP)) {
-                    isStopped = true;
-                }
-                if (question.equals(CONTINUE)) {
-                    isStopped = false;
-                }
-                if (isWorking && !isStopped) {
-                    String answer = takeAnswer();
-                    System.out.println("Бот отвечает: " + answer);
-                    bw.write(answer + System.lineSeparator());
-                }
+            for (String line : outList) {
+                bw.write(line);
+                bw.newLine();
             }
         } catch (IOException e) {
             e.printStackTrace();

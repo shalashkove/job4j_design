@@ -27,7 +27,6 @@ public class ConsoleChat {
             Scanner in = new Scanner(System.in);
             System.out.print("Введите вопрос: ");
             String question = in.nextLine();
-                //bw.write(question + System.lineSeparator());
             outList.add(question);
             if (question.equals(OUT)) {
                 isWorking = false;
@@ -41,19 +40,10 @@ public class ConsoleChat {
             if (isWorking && !isStopped) {
                 String answer = takeAnswer();
                 System.out.println("Бот отвечает: " + answer);
-                    //bw.write(answer + System.lineSeparator());
                 outList.add(answer);
             }
         }
-        try (BufferedWriter bw = new BufferedWriter(
-                new FileWriter(path, Charset.forName("WINDOWS-1251"), true))) {
-            for (String line : outList) {
-                bw.write(line);
-                bw.newLine();
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        writeLogToFile(outList);
     }
 
     private String takeAnswer() {
@@ -71,6 +61,23 @@ public class ConsoleChat {
             }
         }
         return botAnswersList.get((int) (Math.random() * botAnswersList.size()));
+    }
+
+    private boolean writeLogToFile(List<String> data) {
+        boolean result = false;
+        if (data != null) {
+            try (BufferedWriter bw = new BufferedWriter(
+                    new FileWriter(path, Charset.forName("WINDOWS-1251"), true))) {
+                for (String line : data) {
+                    bw.write(line);
+                    bw.newLine();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            result = true;
+        }
+        return result;
     }
 
     public static void main(String[] args) throws IOException {

@@ -19,11 +19,11 @@ public class EchoServer {
                         if (str.contains("?msg=Bye")) {
                             isBye = true;
                         }
-                        if (isBye && str.contains("localhost:9000")) {
-                            server.close();
-                        }
                     }
-                    out.write("HTTP/1.1 200 OK\r\n\"".getBytes());
+                    out.write("HTTP/1.1 200 OK\r\n".getBytes());
+                    if (isBye) {
+                        server.close();
+                    }
                 }
             }
         }

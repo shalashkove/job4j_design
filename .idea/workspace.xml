@@ -26,14 +26,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d51ad0c9-150b-46a6-884d-52437c861874" name="Default Changelist" comment="2. Simple Loggin Facade 4 Java. [#268849]">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/job4j_design.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/job4j_design.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter_001/src/main/java/ru/job4j/io/UsageLog4j.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter_001/src/main/java/ru/job4j/io/UsageLog4j.java" afterDir="false" />
-    </list>
+    <list default="true" id="d51ad0c9-150b-46a6-884d-52437c861874" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -179,13 +172,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1591247740465</updated>
-    </task>
-    <task id="LOCAL-00044" summary="3. Переопределить только hashCode[1003#297511]">
-      <created>1605623535213</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1605623535213</updated>
     </task>
     <task id="LOCAL-00045" summary="3. Переопределить только hashCode[1003#297511]">
       <created>1605628524075</created>
@@ -523,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623996869958</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="test">
+      <created>1624011184432</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1624011184432</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -551,7 +544,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1. Экзамен. Структуры данных и алгоритмы.[1000#297476]" />
     <MESSAGE value="&#9;0.2. FileInputStream[4898#297538]" />
     <MESSAGE value="0.3. BufferedReader.[252489#297530]" />
     <MESSAGE value="0.4. BufferedOutputStream[252490#297531]" />
@@ -576,7 +568,8 @@
     <MESSAGE value="1. Бот [#7921]" />
     <MESSAGE value="1. Log4j. Логирование системы. [#95335]" />
     <MESSAGE value="2. Simple Loggin Facade 4 Java. [#268849]" />
-    <option name="LAST_COMMIT_MESSAGE" value="2. Simple Loggin Facade 4 Java. [#268849]" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="49" key="#ConsoleChat" timestamp="1621605441883">
@@ -615,10 +608,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="480" y="86" key="#com.intellij.unscramble.UnscrambleDialog/0.0.1600.860@0.0.1600.860" timestamp="1617630808457" />
-    <state x="427" y="0" key="CommitChangelistDialog2" timestamp="1624004998165">
+    <state x="427" y="0" key="CommitChangelistDialog2" timestamp="1624011183400">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="427" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1624004998165" />
+    <state x="427" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1624011183400" />
     <state x="527" y="176" key="FileChooserDialogImpl" timestamp="1623998998402">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -671,10 +664,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="301" y="9" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1623999137198" />
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1624005022497">
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1624011188581">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1624005022497" />
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1624011188581" />
     <state x="525" y="326" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1623385669232">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

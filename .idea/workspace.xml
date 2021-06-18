@@ -26,7 +26,14 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d51ad0c9-150b-46a6-884d-52437c861874" name="Default Changelist" comment="" />
+    <list default="true" id="d51ad0c9-150b-46a6-884d-52437c861874" name="Default Changelist" comment="2. Simple Loggin Facade 4 Java. [#268849]">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/job4j_design.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/job4j_design.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_001/src/main/java/ru/job4j/io/UsageLog4j.java" beforeDir="false" afterPath="$PROJECT_DIR$/chapter_001/src/main/java/ru/job4j/io/UsageLog4j.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,11 +67,13 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ToolWindowEvent Log.ShowToolbar" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../job4j" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -72,9 +81,9 @@
       <recent name="ru.job4j.generic" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Dir">
-    <configuration name="Dir" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.job4j.io.Dir" />
+  <component name="RunManager" selected="Application.UsageLog4j">
+    <configuration name="UsageLog4j" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.job4j.io.UsageLog4j" />
       <module name="chapter_001" />
       <extension name="coverage">
         <pattern>
@@ -152,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UsageLog4j" />
         <item itemvalue="JUnit.EmailSortTest.whenEmptyThenZeroResult" />
         <item itemvalue="JUnit.EmailSortTest.whenEmptyListsThenZeroResult" />
         <item itemvalue="JUnit.EmailSortTest.when3UsersThenRightResult" />
         <item itemvalue="JUnit.EmailSortTest.when2UsersThenRightResult" />
-        <item itemvalue="Application.Dir" />
       </list>
     </recent_temporary>
   </component>
@@ -574,10 +583,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="509" y="49" key="#ConsoleChat/0.0.1600.860@0.0.1600.860" timestamp="1621605441883" />
-    <state x="741" y="49" key="#Dir" timestamp="1619440091811">
+    <state x="741" y="49" key="#Dir" timestamp="1623998392874">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="741" y="49" key="#Dir/0.0.1600.860@0.0.1600.860" timestamp="1619440091811" />
+    <state x="741" y="49" key="#Dir/0.0.1600.860@0.0.1600.860" timestamp="1623998392874" />
     <state x="464" y="0" width="582" height="809" key="#DuplicatesFinder" timestamp="1622092063763">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -606,30 +615,30 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="480" y="86" key="#com.intellij.unscramble.UnscrambleDialog/0.0.1600.860@0.0.1600.860" timestamp="1617630808457" />
-    <state x="427" y="0" key="CommitChangelistDialog2" timestamp="1623996868537">
+    <state x="427" y="0" key="CommitChangelistDialog2" timestamp="1624004998165">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="427" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1623996868537" />
-    <state x="527" y="176" key="FileChooserDialogImpl" timestamp="1623385675065">
+    <state x="427" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1624004998165" />
+    <state x="527" y="176" key="FileChooserDialogImpl" timestamp="1623998998402">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="527" y="176" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1623385675065" />
-    <state width="898" height="301" key="GridCell.Tab.0.bottom" timestamp="1623673008099">
+    <state x="527" y="176" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1623998998402" />
+    <state width="897" height="301" key="GridCell.Tab.0.bottom" timestamp="1623999647731">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="898" height="301" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1623673008099" />
-    <state width="898" height="301" key="GridCell.Tab.0.center" timestamp="1623673008099">
+    <state width="897" height="301" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1623999647731" />
+    <state width="897" height="301" key="GridCell.Tab.0.center" timestamp="1623999647731">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="898" height="301" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1623673008099" />
-    <state width="898" height="301" key="GridCell.Tab.0.left" timestamp="1623673008099">
+    <state width="897" height="301" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1623999647731" />
+    <state width="897" height="301" key="GridCell.Tab.0.left" timestamp="1623999647731">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="898" height="301" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1623673008099" />
-    <state width="898" height="301" key="GridCell.Tab.0.right" timestamp="1623673008099">
+    <state width="897" height="301" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1623999647731" />
+    <state width="897" height="301" key="GridCell.Tab.0.right" timestamp="1623999647731">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="898" height="301" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1623673008099" />
+    <state width="897" height="301" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1623999647731" />
     <state width="1171" height="194" key="GridCell.Tab.1.bottom" timestamp="1623386801742">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -658,14 +667,14 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="438" y="191" width="1070" height="477" key="MultipleFileMergeDialog/0.0.1600.860@0.0.1600.860" timestamp="1622187267128" />
-    <state x="301" y="9" key="SettingsEditor" timestamp="1623385676172">
+    <state x="301" y="9" key="SettingsEditor" timestamp="1623999137198">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="301" y="9" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1623385676172" />
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1623996876514">
+    <state x="301" y="9" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1623999137198" />
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1624005022497">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1623996876514" />
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1624005022497" />
     <state x="525" y="326" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1623385669232">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

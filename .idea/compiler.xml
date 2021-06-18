@@ -9,8 +9,8 @@
         <module name="chapter_003" />
         <module name="chapter_002" />
         <module name="chapter_001" />
-        <module name="chapter_004" />
         <module name="chapter_005" />
+        <module name="chapter_004" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="14">

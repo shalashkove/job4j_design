@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="6.11.2">
+<file name="C:\projects\job4j_design\chapter_001\src\main\java\ru\job4j\App.java">
+</file>
+<file name="C:\projects\job4j_design\chapter_001\src\main\java\ru\job4j\collection\Analize.java">
+</file>
+<file name="C:\projects\job4j_design\chapter_001\src\main\java\ru\job4j\collection\EmailSort.java">
+</file>
+<file name="C:\projects\job4j_design\chapter_001\src\main\java\ru\job4j\collection\EmailUser.java">
+</file>
+<file name="C:\projects\job4j_design\chapter_001\src\main\java\ru\job4j\collection\ForwardLinked.java">
+</file>
+<file name="C:\projects\job4j_design\chapter_001\src\main\java\ru\job4j\collection\LinkedArray.java">
+</file>
+<file name="C:\projects\job4j_design\chapter_001\src\main\java\ru\job4j\collection\SimpleArray.java">
+</file>
+<file name="C:\projects\job4j_design\chapter_001\src\main\java\ru\job4j\collection\SimpleHashMap.java">
+</file>
+<file name="C:\projects\job4j_design\chapter_001\src\main\java\ru\job4j\collection\SimpleQueue.java">
+</file>
+<file name="C:\projects\job4j_design\chapter_001\src\main\java\ru\job4j\collection\SimpleSet.java">
+</file>
+<file name="C:\projects\job4j_design\chapter_001\src\main\java\ru\job4j\collection\SimpleStack.java">
+</file>
+<file name="C:\projects\job4j_design\chapter_001\src\main\java\ru\job4j\collection\User.java">
+</file>
+<file name="C:\projects\job4j_design\chapter_001\src\main\java\ru\job4j\generic\Base.java">
+</file>
+<file name="C:\projects\job4j_design\chapter_001\src\main\java\ru\job4j\generic\MemStore.java">
+</file>
+<file name="C:\projects\job4j_design\chapter_001\src\main\java\ru\job4j\generic\Role.java">
+</file>
+<file name="C:\projects\job4j_design\chapter_001\src\main\java\ru\job4j\generic\RoleStore.java">
+</file>
+<file name="C:\projects\job4j_design\chapter_001\src\main\java\ru\job4j\generic\SimpleArray.java">
+</file>
+<file name="C:\projects\job4j_design\chapter_001\src\main\java\ru\job4j\generic\Store.java">
+</file>
+<file name="C:\projects\job4j_design\chapter_001\src\main\java\ru\job4j\generic\User.java">
+</file>
+<file name="C:\projects\job4j_design\chapter_001\src\main\java\ru\job4j\generic\UserStore.java">
+</file>
+<file name="C:\projects\job4j_design\chapter_001\src\main\java\ru\job4j\io\Analizy.java">
+</file>
+<file name="C:\projects\job4j_design\chapter_001\src\main\java\ru\job4j\io\ArgsName.java">
+</file>
+<file name="C:\projects\job4j_design\chapter_001\src\main\java\ru\job4j\io\Config.java">
+</file>
+<file name="C:\projects\job4j_design\chapter_001\src\main\java\ru\job4j\io\Dir.java">
+</file>
+<file name="C:\projects\job4j_design\chapter_001\src\main\java\ru\job4j\io\duplicates\DuplicatesFinder.java">
+</file>
+<file name="C:\projects\job4j_design\chapter_001\src\main\java\ru\job4j\io\duplicates\DuplicatesVisitor.java">
+</file>
+<file name="C:\projects\job4j_design\chapter_001\src\main\java\ru\job4j\io\duplicates\FileProperty.java">
+</file>
+<file name="C:\projects\job4j_design\chapter_001\src\main\java\ru\job4j\io\EvenNumberFile.java">
+</file>
+<file name="C:\projects\job4j_design\chapter_001\src\main\java\ru\job4j\io\LogFilter.java">
+</file>
+<file name="C:\projects\job4j_design\chapter_001\src\main\java\ru\job4j\io\Matrix.java">
+</file>
+<file name="C:\projects\job4j_design\chapter_001\src\main\java\ru\job4j\io\Pack.java">
+</file>
+<file name="C:\projects\job4j_design\chapter_001\src\main\java\ru\job4j\io\PrintFiles.java">
+</file>
+<file name="C:\projects\job4j_design\chapter_001\src\main\java\ru\job4j\io\ResultFile.java">
+</file>
+<file name="C:\projects\job4j_design\chapter_001\src\main\java\ru\job4j\io\Search.java">
+</file>
+<file name="C:\projects\job4j_design\chapter_001\src\main\java\ru\job4j\io\SearchFiles.java">
+</file>
+<file name="C:\projects\job4j_design\chapter_001\src\main\java\ru\job4j\io\Zip.java">
+</file>
+<file name="C:\projects\job4j_design\chapter_001\src\main\java\ru\job4j\it\ArrayIt.java">
+</file>
+<file name="C:\projects\job4j_design\chapter_001\src\main\java\ru\job4j\it\BackwardArrayIt.java">
+</file>
+<file name="C:\projects\job4j_design\chapter_001\src\main\java\ru\job4j\it\EvenIt.java">
+</file>
+<file name="C:\projects\job4j_design\chapter_001\src\main\java\ru\job4j\it\FlatMap.java">
+</file>
+<file name="C:\projects\job4j_design\chapter_001\src\main\java\ru\job4j\it\MatrixIt.java">
+</file>
+<file name="C:\projects\job4j_design\chapter_001\src\main\java\ru\job4j\tree\SimpleTree.java">
+</file>
+<file name="C:\projects\job4j_design\chapter_001\src\main\java\ru\job4j\tree\Tree.java">
+</file>
+</checkstyle>

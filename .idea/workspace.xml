@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d51ad0c9-150b-46a6-884d-52437c861874" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="task_268849" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1cqEUmCBRVob7fTCu9Ia5IxUbWE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ChangesTree.GroupingKeys" value="module&#10;directory" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../job4j" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ru.job4j.io" />
+      <recent name="ru.job4j.generic" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Dir">
+    <configuration name="Dir" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.job4j.io.Dir" />
+      <module name="chapter_001" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.job4j.io.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmailSortTest.when2UsersThenRightResult" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="chapter_001" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.job4j.collection.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.job4j.collection" />
+      <option name="MAIN_CLASS_NAME" value="ru.job4j.collection.EmailSortTest" />
+      <option name="METHOD_NAME" value="when2UsersThenRightResult" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmailSortTest.when3UsersThenRightResult" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="chapter_001" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.job4j.collection.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.job4j.collection" />
+      <option name="MAIN_CLASS_NAME" value="ru.job4j.collection.EmailSortTest" />
+      <option name="METHOD_NAME" value="when3UsersThenRightResult" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmailSortTest.whenEmptyListsThenZeroResult" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="chapter_001" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.job4j.collection.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.job4j.collection" />
+      <option name="MAIN_CLASS_NAME" value="ru.job4j.collection.EmailSortTest" />
+      <option name="METHOD_NAME" value="whenEmptyListsThenZeroResult" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmailSortTest.whenEmptyThenZeroResult" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="chapter_001" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.job4j.collection.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.job4j.collection" />
+      <option name="MAIN_CLASS_NAME" value="ru.job4j.collection.EmailSortTest" />
+      <option name="METHOD_NAME" value="whenEmptyThenZeroResult" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.EmailSortTest.whenEmptyThenZeroResult" />
+        <item itemvalue="JUnit.EmailSortTest.whenEmptyListsThenZeroResult" />
+        <item itemvalue="JUnit.EmailSortTest.when3UsersThenRightResult" />
+        <item itemvalue="JUnit.EmailSortTest.when2UsersThenRightResult" />
+        <item itemvalue="Application.Dir" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d51ad0c9-150b-46a6-884d-52437c861874" name="Default Changelist" comment="" />
+      <created>1591247740465</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591247740465</updated>
+    </task>
+    <task id="LOCAL-00044" summary="3. Переопределить только hashCode[1003#297511]">
+      <created>1605623535213</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1605623535213</updated>
+    </task>
+    <task id="LOCAL-00045" summary="3. Переопределить только hashCode[1003#297511]">
+      <created>1605628524075</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1605628524075</updated>
+    </task>
+    <task id="LOCAL-00046" summary="4. Переопределить только equals[1004#297512]">
+      <created>1605865362437</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1605865362437</updated>
+    </task>
+    <task id="LOCAL-00047" summary="5. Перекрывать и equals и hashCode[1002#297510]">
+      <created>1605880798387</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1605880798388</updated>
+    </task>
+    <task id="LOCAL-00048" summary="5. Перекрывать и equals и hashCode[1002#297510]">
+      <created>1605881779465</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1605881779465</updated>
+    </task>
+    <task id="LOCAL-00049" summary="8. Реализовать собственную структуру данных - HashMap[1008#297516]">
+      <created>1607671668629</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1607671668629</updated>
+    </task>
+    <task id="LOCAL-00050" summary="8. Реализовать собственную структуру данных - HashMap[1008#297516]">
+      <created>1607683351689</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1607683351689</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Синхронизация">
+      <created>1608799822849</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1608799822849</updated>
+    </task>
+    <task id="LOCAL-00052" summary="1. Создать элементарную структуру дерева[1711#297498]">
+      <created>1610359186758</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1610359186758</updated>
+    </task>
+    <task id="LOCAL-00053" summary="&#9;2. Добавить метод boolean isBinary()[1712#297499]">
+      <created>1610371740782</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1610371740782</updated>
+    </task>
+    <task id="LOCAL-00054" summary="2. Статистику по коллекции.[45889#297475]">
+      <created>1610818605292</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1610818605292</updated>
+    </task>
+    <task id="LOCAL-00055" summary="2. Добавить метод boolean isBinary()[1712#297499]">
+      <created>1611127936223</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1611127936223</updated>
+    </task>
+    <task id="LOCAL-00056" summary="2. Статистику по коллекции.[45889#297475]">
+      <created>1611291914690</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1611291914690</updated>
+    </task>
+    <task id="LOCAL-00057" summary="2. Статистику по коллекции.[45889#297475]">
+      <created>1611388539117</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1611388539117</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Синхронизация">
+      <created>1611443558673</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1611443558673</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Синхрон">
+      <created>1616429849014</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1616429849014</updated>
+    </task>
+    <task id="LOCAL-00060" summary="1. Экзамен. Структуры данных и алгоритмы.[1000#297476]">
+      <created>1616455827995</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1616455827995</updated>
+    </task>
+    <task id="LOCAL-00061" summary="0.1. FileOutputStream.[252488#297529]">
+      <created>1617611833970</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1617611833970</updated>
+    </task>
+    <task id="LOCAL-00062" summary="&#9;0.2. FileInputStream[4898#297538]">
+      <created>1617614168369</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1617614168369</updated>
+    </task>
+    <task id="LOCAL-00063" summary="0.3. BufferedReader.[252489#297530]">
+      <created>1617616388917</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1617616388917</updated>
+    </task>
+    <task id="LOCAL-00064" summary="0.4. BufferedOutputStream[252490#297531]">
+      <created>1617618865068</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1617618865068</updated>
+    </task>
+    <task id="LOCAL-00065" summary="0.1. FileOutputStream.[252488#297529]">
+      <created>1617694022855</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1617694022855</updated>
+    </task>
+    <task id="LOCAL-00066" summary="&#9;1. Читаем файл конфигурации[858#297534]">
+      <created>1617705651184</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1617705651185</updated>
+    </task>
+    <task id="LOCAL-00067" summary="2. Анализ доступности сервера.[859#297535]">
+      <created>1617788270753</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1617788270753</updated>
+    </task>
+    <task id="LOCAL-00068" summary="1. Читаем файл конфигурации[858#297534]">
+      <created>1617792344839</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1617792344839</updated>
+    </task>
+    <task id="LOCAL-00069" summary="1. Читаем файл конфигурации[858#297534]">
+      <created>1617873644589</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1617873644589</updated>
+    </task>
+    <task id="LOCAL-00070" summary="3.0. Тестирование IO[173905#297527]">
+      <created>1617959770609</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1617959770609</updated>
+    </task>
+    <task id="LOCAL-00071" summary="4.0. File[252491#297532]">
+      <created>1617963114375</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1617963114375</updated>
+    </task>
+    <task id="LOCAL-00072" summary="Синхронизация">
+      <created>1617968285881</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1617968285881</updated>
+    </task>
+    <task id="LOCAL-00073" summary="4.1. Сканирование файловой системы.[106929#297526]">
+      <created>1619433568144</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1619433568144</updated>
+    </task>
+    <task id="LOCAL-00074" summary="5. Валидация параметров запуска.[246865#297528]">
+      <created>1619440889433</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1619440889433</updated>
+    </task>
+    <task id="LOCAL-00075" summary="5.1. Именованные аргументы[295518#297533]">
+      <created>1619600940655</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1619600940656</updated>
+    </task>
+    <task id="LOCAL-00076" summary="5.2. Архивировать проект[861#297536]">
+      <created>1619695103848</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1619695103850</updated>
+    </task>
+    <task id="LOCAL-00077" summary="5.2. Архивировать проект[861#297536]">
+      <created>1620110363948</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1620110363949</updated>
+    </task>
+    <task id="LOCAL-00078" summary="синхронизация">
+      <created>1620451759516</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1620451759517</updated>
+    </task>
+    <task id="LOCAL-00079" summary="проверка .gitignore">
+      <created>1620452537047</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1620452537047</updated>
+    </task>
+    <task id="LOCAL-00080" summary="проверка /target">
+      <created>1620454538726</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1620454538727</updated>
+    </task>
+    <task id="LOCAL-00081" summary="6. Кодировка.[862#297537]">
+      <created>1621830223078</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1621830223078</updated>
+    </task>
+    <task id="LOCAL-00082" summary="6. Кодировка.[862#297537]">
+      <created>1621925510368</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1621925510368</updated>
+    </task>
+    <task id="LOCAL-00083" summary="6. Кодировка. [#862 #159970]">
+      <created>1622090673447</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1622090673447</updated>
+    </task>
+    <task id="LOCAL-00084" summary="4.2. Поиск дубликатов [#315066]">
+      <created>1622096499104</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1622096499104</updated>
+    </task>
+    <task id="LOCAL-00085" summary="синхронизация">
+      <created>1622187376877</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1622187376877</updated>
+    </task>
+    <task id="LOCAL-00086" summary="0. Что такое Socket? [#4850]">
+      <created>1623041261490</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1623041261490</updated>
+    </task>
+    <task id="LOCAL-00087" summary="0. Что такое Socket? [#4850]">
+      <created>1623134472130</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1623134472130</updated>
+    </task>
+    <task id="LOCAL-00088" summary="1. Бот [#7921]">
+      <created>1623225127409</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1623225127409</updated>
+    </task>
+    <task id="LOCAL-00089" summary="1. Log4j. Логирование системы. [#95335]">
+      <created>1623387061529</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1623387061529</updated>
+    </task>
+    <task id="LOCAL-00090" summary="1. Log4j. Логирование системы. [#95335]">
+      <created>1623563182412</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1623563182412</updated>
+    </task>
+    <task id="LOCAL-00091" summary="2. Simple Loggin Facade 4 Java. [#268849]">
+      <created>1623563928158</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1623563928158</updated>
+    </task>
+    <task id="LOCAL-00092" summary="2. Simple Loggin Facade 4 Java. [#268849]">
+      <created>1623996869958</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1623996869958</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1. Экзамен. Структуры данных и алгоритмы.[1000#297476]" />
+    <MESSAGE value="&#9;0.2. FileInputStream[4898#297538]" />
+    <MESSAGE value="0.3. BufferedReader.[252489#297530]" />
+    <MESSAGE value="0.4. BufferedOutputStream[252490#297531]" />
+    <MESSAGE value="0.1. FileOutputStream.[252488#297529]" />
+    <MESSAGE value="&#9;1. Читаем файл конфигурации[858#297534]" />
+    <MESSAGE value="2. Анализ доступности сервера.[859#297535]" />
+    <MESSAGE value="1. Читаем файл конфигурации[858#297534]" />
+    <MESSAGE value="3.0. Тестирование IO[173905#297527]" />
+    <MESSAGE value="4.0. File[252491#297532]" />
+    <MESSAGE value="Синхронизация" />
+    <MESSAGE value="4.1. Сканирование файловой системы.[106929#297526]" />
+    <MESSAGE value="5. Валидация параметров запуска.[246865#297528]" />
+    <MESSAGE value="5.1. Именованные аргументы[295518#297533]" />
+    <MESSAGE value="5.2. Архивировать проект[861#297536]" />
+    <MESSAGE value="проверка .gitignore" />
+    <MESSAGE value="проверка /target" />
+    <MESSAGE value="6. Кодировка.[862#297537]" />
+    <MESSAGE value="6. Кодировка. [#862 #159970]" />
+    <MESSAGE value="4.2. Поиск дубликатов [#315066]" />
+    <MESSAGE value="синхронизация" />
+    <MESSAGE value="0. Что такое Socket? [#4850]" />
+    <MESSAGE value="1. Бот [#7921]" />
+    <MESSAGE value="1. Log4j. Логирование системы. [#95335]" />
+    <MESSAGE value="2. Simple Loggin Facade 4 Java. [#268849]" />
+    <option name="LAST_COMMIT_MESSAGE" value="2. Simple Loggin Facade 4 Java. [#268849]" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="509" y="49" key="#ConsoleChat" timestamp="1621605441883">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="509" y="49" key="#ConsoleChat/0.0.1600.860@0.0.1600.860" timestamp="1621605441883" />
+    <state x="741" y="49" key="#Dir" timestamp="1619440091811">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="741" y="49" key="#Dir/0.0.1600.860@0.0.1600.860" timestamp="1619440091811" />
+    <state x="464" y="0" width="582" height="809" key="#DuplicatesFinder" timestamp="1622092063763">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="464" y="0" width="582" height="809" key="#DuplicatesFinder/0.0.1600.860@0.0.1600.860" timestamp="1622092063763" />
+    <state x="509" y="49" key="#Pack" timestamp="1620110132294">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="509" y="49" key="#Pack/0.0.1600.860@0.0.1600.860" timestamp="1620110132294" />
+    <state x="764" y="53" key="#Search" timestamp="1619440799808">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="764" y="53" key="#Search/0.0.1600.860@0.0.1600.860" timestamp="1619440799808" />
+    <state x="509" y="49" key="#UsageEncoding" timestamp="1621146966065">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="509" y="49" key="#UsageEncoding/0.0.1600.860@0.0.1600.860" timestamp="1621146966065" />
+    <state x="605" y="136" key="#com.intellij.ide.util.MemberChooser" timestamp="1619431664842">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="605" y="136" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1619431664842" />
+    <state x="471" y="354" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1617630550114">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="471" y="354" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1600.860@0.0.1600.860" timestamp="1617630550114" />
+    <state x="480" y="86" key="#com.intellij.unscramble.UnscrambleDialog" timestamp="1617630808457">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="480" y="86" key="#com.intellij.unscramble.UnscrambleDialog/0.0.1600.860@0.0.1600.860" timestamp="1617630808457" />
+    <state x="427" y="0" key="CommitChangelistDialog2" timestamp="1623996868537">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="427" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1623996868537" />
+    <state x="527" y="176" key="FileChooserDialogImpl" timestamp="1623385675065">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="527" y="176" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1623385675065" />
+    <state width="898" height="301" key="GridCell.Tab.0.bottom" timestamp="1623673008099">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="898" height="301" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1623673008099" />
+    <state width="898" height="301" key="GridCell.Tab.0.center" timestamp="1623673008099">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="898" height="301" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1623673008099" />
+    <state width="898" height="301" key="GridCell.Tab.0.left" timestamp="1623673008099">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="898" height="301" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1623673008099" />
+    <state width="898" height="301" key="GridCell.Tab.0.right" timestamp="1623673008099">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="898" height="301" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1623673008099" />
+    <state width="1171" height="194" key="GridCell.Tab.1.bottom" timestamp="1623386801742">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1171" height="194" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1623386801742" />
+    <state width="1171" height="194" key="GridCell.Tab.1.center" timestamp="1623386801742">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1171" height="194" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1623386801742" />
+    <state width="1171" height="194" key="GridCell.Tab.1.left" timestamp="1623386801742">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1171" height="194" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1623386801742" />
+    <state width="1171" height="194" key="GridCell.Tab.1.right" timestamp="1623386801742">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1171" height="194" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1623386801742" />
+    <state x="330" y="85" key="Maven.ArtifactSearchDialog" timestamp="1623386718993">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="330" y="85" key="Maven.ArtifactSearchDialog/0.0.1600.860@0.0.1600.860" timestamp="1623386718993" />
+    <state x="152" y="68" key="MergeDialog" timestamp="1617956824795">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="152" y="68" key="MergeDialog/0.0.1600.860@0.0.1600.860" timestamp="1617956824795" />
+    <state x="438" y="191" width="1070" height="477" key="MultipleFileMergeDialog" timestamp="1622187267128">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="438" y="191" width="1070" height="477" key="MultipleFileMergeDialog/0.0.1600.860@0.0.1600.860" timestamp="1622187267128" />
+    <state x="301" y="9" key="SettingsEditor" timestamp="1623385676172">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="301" y="9" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1623385676172" />
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1623996876514">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1623996876514" />
+    <state x="525" y="326" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1623385669232">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="525" y="326" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1600.860@0.0.1600.860" timestamp="1623385669232" />
+    <state x="601" y="218" key="git4idea.merge.GitMergeDialog" timestamp="1623563390636">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="601" y="218" key="git4idea.merge.GitMergeDialog/0.0.1600.860@0.0.1600.860" timestamp="1623563390636" />
+    <state x="517" y="218" key="git4idea.merge.GitPullDialog" timestamp="1623674267635">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="517" y="218" key="git4idea.merge.GitPullDialog/0.0.1600.860@0.0.1600.860" timestamp="1623674267635" />
+    <state x="463" y="180" key="search.everywhere.popup" timestamp="1622091130886">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="463" y="180" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1622091130886" />
+  </component>
+</project>

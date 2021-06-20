@@ -26,7 +26,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d51ad0c9-150b-46a6-884d-52437c861874" name="Default Changelist" comment="" />
+    <list default="true" id="d51ad0c9-150b-46a6-884d-52437c861874" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -172,13 +174,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1591247740465</updated>
-    </task>
-    <task id="LOCAL-00046" summary="4. Переопределить только equals[1004#297512]">
-      <created>1605865362437</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1605865362437</updated>
     </task>
     <task id="LOCAL-00047" summary="5. Перекрывать и equals и hashCode[1002#297510]">
       <created>1605880798387</created>
@@ -516,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624011742129</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="test2">
+      <created>1624012055925</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1624012055925</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -608,10 +610,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="480" y="86" key="#com.intellij.unscramble.UnscrambleDialog/0.0.1600.860@0.0.1600.860" timestamp="1617630808457" />
-    <state x="427" y="0" key="CommitChangelistDialog2" timestamp="1624011741160">
+    <state x="427" y="0" key="CommitChangelistDialog2" timestamp="1624012054947">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="427" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1624011741160" />
+    <state x="427" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1624012054947" />
     <state x="527" y="176" key="FileChooserDialogImpl" timestamp="1623998998402">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -664,10 +666,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="301" y="9" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1623999137198" />
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1624011746782">
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1624012063889">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1624011746782" />
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1624012063889" />
     <state x="525" y="326" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1623385669232">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

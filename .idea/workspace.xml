@@ -27,11 +27,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d51ad0c9-150b-46a6-884d-52437c861874" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project7.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project8.zip" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,10 +66,10 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="ToolWindowEvent Log.ShowToolbar" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../job4j" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="project.structure.side.proportion" value="0.34367815" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -178,13 +175,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1591247740465</updated>
-    </task>
-    <task id="LOCAL-00048" summary="5. Перекрывать и equals и hashCode[1002#297510]">
-      <created>1605881779465</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1605881779465</updated>
     </task>
     <task id="LOCAL-00049" summary="8. Реализовать собственную структуру данных - HashMap[1008#297516]">
       <created>1607671668629</created>
@@ -522,7 +512,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624176679376</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="коммит от 21.06.2021 по ветке master">
+      <created>1624250245253</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1624250245253</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -550,7 +547,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="0.4. BufferedOutputStream[252490#297531]" />
     <MESSAGE value="0.1. FileOutputStream.[252488#297529]" />
     <MESSAGE value="&#9;1. Читаем файл конфигурации[858#297534]" />
     <MESSAGE value="2. Анализ доступности сервера.[859#297535]" />
@@ -575,7 +571,8 @@
     <MESSAGE value="test" />
     <MESSAGE value="test2" />
     <MESSAGE value="коммит от 20.06.2021 по ветке master" />
-    <option name="LAST_COMMIT_MESSAGE" value="коммит от 20.06.2021 по ветке master" />
+    <MESSAGE value="коммит от 21.06.2021 по ветке master" />
+    <option name="LAST_COMMIT_MESSAGE" value="коммит от 21.06.2021 по ветке master" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="49" key="#ConsoleChat" timestamp="1621605441883">
@@ -614,10 +611,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="480" y="86" key="#com.intellij.unscramble.UnscrambleDialog/0.0.1600.860@0.0.1600.860" timestamp="1617630808457" />
-    <state x="427" y="0" key="CommitChangelistDialog2" timestamp="1624176678572">
+    <state x="427" y="0" key="CommitChangelistDialog2" timestamp="1624250243297">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="427" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1624176678572" />
+    <state x="427" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1624250243297" />
     <state x="527" y="176" key="FileChooserDialogImpl" timestamp="1623998998402">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -666,14 +663,14 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="438" y="191" width="1070" height="477" key="MultipleFileMergeDialog/0.0.1600.860@0.0.1600.860" timestamp="1622187267128" />
-    <state x="301" y="9" key="SettingsEditor" timestamp="1623999137198">
+    <state x="301" y="9" width="1127" height="770" key="SettingsEditor" timestamp="1624252133543">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="301" y="9" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1623999137198" />
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1624176688426">
+    <state x="301" y="9" width="1127" height="770" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1624252133543" />
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1624250249252">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1624176688426" />
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1624250249252" />
     <state x="525" y="326" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1623385669232">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

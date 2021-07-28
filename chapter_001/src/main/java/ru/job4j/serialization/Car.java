@@ -66,6 +66,10 @@ public class Car {
                     ", address='" + address + '\'' +
                     '}';
         }
+
+        public String toXMLview() {
+            return "<contact name=\"" + this.getName() + "\" " + "address=\"" + this.getAddress() + "\"/>";
+        }
     }
 
     /*    вывод объекта в формате XML:
@@ -89,7 +93,7 @@ public class Car {
         result.append("<isCargo>").append(car.isCargo()).append("</isCargo>").append(LS);
         result.append("<price>").append(car.getPrice()).append("</price>").append(LS);
         result.append("<model>").append(car.getModel()).append("</model>").append(LS);
-        result.append("<contact>").append(car.getContact().toString()).append("</contact>").append(LS);
+        result.append(car.getContact().toXMLview()).append(LS);
         result.append("<ownersArrs>").append(LS);
         for (String str : car.getOwnersArr()) {
             result.append("<ownersArr>").append(str).append("</ownersArr>").append(LS);

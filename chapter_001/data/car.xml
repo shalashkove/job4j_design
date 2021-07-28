@@ -1,0 +1,11 @@
+<?xml version="1.1" encoding="UTF-8" ?>
+<Car>
+<isCargo>false</isCargo>
+<price>10000.0</price>
+<model>Ford 9L</model>
+<contact name="John K. Smith" address="400100, City, Town, Street, house, flat"/>
+<ownersArrs>
+<ownersArr>Alice</ownersArr>
+<ownersArr>Bill</ownersArr>
+</ownersArrs>
+</Car>

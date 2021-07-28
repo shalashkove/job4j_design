@@ -119,7 +119,8 @@ public class Car {
                 new Contact("John K. Smith", "400100, City, Town, Street, house, flat"),
                 new String[] {"Alice", "Bill"});
         System.out.println(Car.toXMLview(car));
-        try (PrintWriter pw = new PrintWriter(new FileWriter("car.xml", Charset.forName("UTF-8"), true))) {
+        try (PrintWriter pw = new PrintWriter(new FileWriter(".\\chapter_001\\data\\car.xml",
+                Charset.forName("UTF-8"), true))) {
             pw.write(Car.toXMLview(car));
         } catch (IOException e) {
             e.printStackTrace();

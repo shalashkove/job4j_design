@@ -1,17 +1,34 @@
 package ru.job4j.serialization;
 
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
+import ru.job4j.serialization.xml.Person;
+
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.Marshaller;
+import javax.xml.bind.Unmarshaller;
+import javax.xml.bind.annotation.*;
+import java.io.*;
 import java.nio.charset.Charset;
 import java.util.Arrays;
 
+
+@XmlRootElement(name = "car")
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Car {
+    @XmlAttribute
     private boolean isCargo;
+
+    @XmlAttribute
     private double price;
+
+    @XmlAttribute
     private String model;
+
     private Contact contact;
+
+    @XmlElementWrapper(name = "ownerArrs")
+    @XmlElement(name = "ownersArr")
     private String[] ownersArr;
+
     static final String LS = System.lineSeparator();
 
     public boolean isCargo() {
@@ -42,9 +59,17 @@ public class Car {
         this.ownersArr = ownersArr;
     }
 
+    public Car() {    }
+
+    @XmlRootElement(name = "contact")
     private static class Contact {
+        @XmlAttribute
         private String name;
+
+        @XmlAttribute
         private String address;
+
+        public Contact() {        }
 
         public Contact(String name, String address) {
             this.name = name;
@@ -114,16 +139,31 @@ public class Car {
                 '}';
     }
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws Exception {
+//    public static void main(String[] args) throws IOException {
         Car car = new Car(false, 10000.00, "Ford 9L",
                 new Contact("John K. Smith", "400100, City, Town, Street, house, flat"),
                 new String[] {"Alice", "Bill"});
-        System.out.println(Car.toXMLview(car));
-        try (PrintWriter pw = new PrintWriter(new FileWriter(".\\chapter_001\\data\\car.xml",
-                Charset.forName("UTF-8"), true))) {
-            pw.write(Car.toXMLview(car));
-        } catch (IOException e) {
-            e.printStackTrace();
+//        System.out.println(Car.toXMLview(car));
+//        try (PrintWriter pw = new PrintWriter(new FileWriter(".\\chapter_001\\data\\car.xml",
+//                Charset.forName("UTF-8"), true))) {
+//            pw.write(Car.toXMLview(car));
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+        JAXBContext context = JAXBContext.newInstance(Car.class);
+        Marshaller marshaller = context.createMarshaller();
+        marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
+        String xml = "";
+        try (StringWriter writer = new StringWriter()) {
+            marshaller.marshal(car, writer);
+            xml = writer.getBuffer().toString();
+            System.out.println(xml);
+        }
+        Unmarshaller unmarshaller = context.createUnmarshaller();
+        try (StringReader reader = new StringReader(xml)) {
+            Car result = (Car) unmarshaller.unmarshal(reader);
+            System.out.println(result);
         }
     }
 }

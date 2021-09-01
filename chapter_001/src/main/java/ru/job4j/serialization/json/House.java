@@ -42,13 +42,13 @@ public class House {
 
     @Override
     public String toString() {
-        return "House{" +
-                "isFree=" + isFree +
-                ", price=" + price +
-                ", owner='" + owner + '\'' +
-                ", contact=" + contact +
-                ", ownersList=" + Arrays.toString(ownersList) +
-                '}';
+        return "House{"
+                + "isFree=" + isFree
+                + ", price=" + price
+                + ", owner='" + owner + '\''
+                + ", contact=" + contact
+                + ", ownersList=" + Arrays.toString(ownersList)
+                + '}';
     }
 
     public static void main(String[] args) {

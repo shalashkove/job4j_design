@@ -86,10 +86,10 @@ public class Car {
 
         @Override
         public String toString() {
-            return "Contact{" +
-                    "name='" + name + '\'' +
-                    ", address='" + address + '\'' +
-                    '}';
+            return "Contact{"
+                    + "name='" + name + '\''
+                    + ", address='" + address + '\''
+                    + '}';
         }
 
         public String toXMLview() {
@@ -111,7 +111,7 @@ public class Car {
      * </ownersArrs>                - конец массива ownersArr
      * </Car>                       - конец объекта Car
      */
-    public static String toXMLview (Car car) {
+    public static String toXMLview(Car car) {
         StringBuilder result = new StringBuilder();
         result.append("<?xml version=\"1.1\" encoding=\"UTF-8\" ?>").append(LS);
         result.append("<Car>").append(LS);
@@ -130,13 +130,13 @@ public class Car {
 
     @Override
     public String toString() {
-        return "Car{" +
-                "isCargo=" + isCargo +
-                ", price=" + price +
-                ", model='" + model + '\'' +
-                ", contact=" + contact +
-                ", ownersArr=" + Arrays.toString(ownersArr) +
-                '}';
+        return "Car{"
+                + "isCargo=" + isCargo
+                + ", price=" + price
+                + ", model='" + model + '\''
+                + ", contact=" + contact
+                + ", ownersArr=" + Arrays.toString(ownersArr)
+                + '}';
     }
 
     public static void main(String[] args) throws Exception {

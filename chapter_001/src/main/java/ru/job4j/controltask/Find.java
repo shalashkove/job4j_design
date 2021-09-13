@@ -42,16 +42,10 @@ public class Find {
         if (argsList.size() != 4) {
             result = false;
         }
-        if (!argsList.containsKey("-d")) {
-            result = false;
-        }
-        if (!argsList.containsKey("-n")) {
-            result = false;
-        }
-        if (!argsList.containsKey("-o")) {
-            result = false;
-        }
-        if (!argsList.containsKey("-t")) {
+        if (!argsList.containsKey("-d")
+                || !argsList.containsKey("-n")
+                || !argsList.containsKey("-o")
+                || !argsList.containsKey("-t")) {
             result = false;
         } else {
             String value = argsList.get("-t");
@@ -119,14 +113,11 @@ public class Find {
         Find find = new Find();
         find.parsArgs(args);
         if (find.validation()) {
-            if (find.getArgsList().get("-t").equals("mask")) {
-                find.findMask();
-            }
-            if (find.getArgsList().get("-t").equals("name")) {
-                find.findName();
-            }
-            if (find.getArgsList().get("-t").equals("regex")) {
-                find.findRegex();
+            switch (find.getArgsList().get("-t")) {
+                case "mask" : find.findMask();
+                case "name" : find.findName();
+                case "regex" : find.findRegex();
+                default : break;
             }
         }
         find.writeResult();

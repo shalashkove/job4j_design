@@ -27,7 +27,7 @@ public class SearchFiles implements FileVisitor<Path> {
 
     @Override
     public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
-        System.out.println(file.toAbsolutePath());
+        //System.out.println(file.toAbsolutePath());
         if (condition.test(file.toAbsolutePath())) {
             listOfPaths.add(file);
         }

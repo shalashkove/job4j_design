@@ -1,6 +1,8 @@
 package ru.job4j.controltask;
 
-import ru.job4j.io.SearchFiles;
+//import ru.job4j.io.SearchFiles;
+
+import com.google.gson.internal.bind.util.ISO8601Utils;
 
 import java.io.BufferedOutputStream;
 import java.io.FileOutputStream;
@@ -61,19 +63,41 @@ public class Find {
         return result;
     }
 
-    public void findMask() {
-        final String patternString;
-        if (argsList.get("-n").startsWith("*")) {
-            patternString = argsList.get("-n").substring(1);
-        } else {
-            patternString = argsList.get("-n");
+    public void findChoice() {
+        switch (this.getArgsList().get("-t")) {
+            case "mask" : this.findMask();
+            case "name" : this.findName();
+            case "regex" : this.findRegex();
+            default : break;
         }
-        Predicate<Path> condition = p -> p.toFile().getName().endsWith(patternString);
+    }
+
+    public void findMask() {
+        StringBuilder sb = new StringBuilder();
+        char[] stringChars = argsList.get("-n").toCharArray();
+        for (char elem : stringChars) {
+            switch (elem) {
+                case '*' : sb.append("\\w*");
+                break;
+                case '?' : sb.append("?");
+                break;
+                case '.' : sb.append("\\.");
+                break;
+                default : sb.append(elem);
+            }
+        }
+        Predicate<Path> condition = p -> {
+            String patternString = sb.toString();
+            Pattern pattern = Pattern.compile(patternString, Pattern.CASE_INSENSITIVE);
+            Matcher matcher = pattern.matcher(p.toFile().toString());
+            return matcher.find();
+        };
         find(condition);
+
     }
 
     public void findName() {
-        Predicate<Path> condition = p -> p.toFile().getName().matches(argsList.get("-n"));
+        Predicate<Path> condition = p -> p.toFile().getName().equals(argsList.get("-n"));
         find(condition);
     }
 
@@ -81,6 +105,7 @@ public class Find {
         Predicate<Path> condition = p -> {
             String patternString = argsList.get("-n");
             Pattern pattern = Pattern.compile(patternString, Pattern.CASE_INSENSITIVE);
+            System.out.println(">>>: " + pattern);
             Matcher matcher = pattern.matcher(p.toFile().toString());
             return matcher.find();
         };
@@ -93,7 +118,7 @@ public class Find {
         try {
             Files.walkFileTree(startPath, searcher);
         } catch (IOException e) {
-            System.out.println(e.getStackTrace());
+            e.printStackTrace();
         }
         listOfPaths = searcher.getPaths();
     }
@@ -113,12 +138,7 @@ public class Find {
         Find find = new Find();
         find.parsArgs(args);
         if (find.validation()) {
-            switch (find.getArgsList().get("-t")) {
-                case "mask" : find.findMask();
-                case "name" : find.findName();
-                case "regex" : find.findRegex();
-                default : break;
-            }
+            find.findChoice();
         }
         find.writeResult();
 //        System.out.printf("\n   Finded %s items. Files result list:\n", find.getListOfPaths().size());

@@ -66,28 +66,18 @@ public class Find {
     public void findChoice() {
         switch (this.getArgsList().get("-t")) {
             case "mask" : this.findMask();
+            break;
             case "name" : this.findName();
+            break;
             case "regex" : this.findRegex();
+            break;
             default : break;
         }
     }
 
     public void findMask() {
-        StringBuilder sb = new StringBuilder();
-        char[] stringChars = argsList.get("-n").toCharArray();
-        for (char elem : stringChars) {
-            switch (elem) {
-                case '*' : sb.append("\\w*");
-                break;
-                case '?' : sb.append("?");
-                break;
-                case '.' : sb.append("\\.");
-                break;
-                default : sb.append(elem);
-            }
-        }
         Predicate<Path> condition = p -> {
-            String patternString = sb.toString();
+            String patternString = Find.preparePattern(argsList.get("-n"));
             Pattern pattern = Pattern.compile(patternString, Pattern.CASE_INSENSITIVE);
             Matcher matcher = pattern.matcher(p.toFile().toString());
             return matcher.find();
@@ -134,6 +124,21 @@ public class Find {
         }
     }
 
+    private static String preparePattern(String pattern) {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < pattern.length(); i++) {
+            char c = pattern.charAt(i);
+            switch (c) {
+                case '*' : sb.append(".*");
+                break;
+                case '.' : sb.append("\\.");
+                break;
+                default : sb.append(c);
+            }
+        }
+        return sb.toString();
+    }
+
     public static void main(String[] args) {
         Find find = new Find();
         find.parsArgs(args);
@@ -141,7 +146,7 @@ public class Find {
             find.findChoice();
         }
         find.writeResult();
-//        System.out.printf("\n   Finded %s items. Files result list:\n", find.getListOfPaths().size());
-//        find.getListOfPaths().forEach(x -> System.out.println(x.toAbsolutePath()));
+        System.out.printf("\n   Finded %s items. Files result list:\n", find.getListOfPaths().size());
+        find.getListOfPaths().forEach(x -> System.out.println(x.toAbsolutePath()));
     }
 }

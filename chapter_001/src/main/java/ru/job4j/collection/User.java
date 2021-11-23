@@ -42,9 +42,6 @@ public class User {
         Object object2 = new Object();
         System.out.println("user1 = " + user1 + " hash: " + user1.hashCode() + "   Object1 = " + object1);
         System.out.println("user2 = " + user2 + " hash: " + user2.hashCode() + "   Object2 = " + object2);
-//        Map<User, Object> mapa = Map.of(
-//                user1, object1,
-//                user2, object2);
         Map<User, Object> mapa = new HashMap<>();
         mapa.put(user1, object1);
         mapa.put(user2, object2);

@@ -192,7 +192,7 @@ public class SimpleHashMap<K, V> implements Iterable<SimpleHashMap.Node<K, V>>  
         boolean isFirstIteration = true;
         int cursor;
         int indexNode = -1;
-        Node<K, V> currentNode = null; //(Node<K, V>) table[0];
+        Node<K, V> currentNode = null;
         int expectedModCount = modCount;
 
         @Override

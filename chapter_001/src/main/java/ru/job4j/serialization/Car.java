@@ -140,17 +140,9 @@ public class Car {
     }
 
     public static void main(String[] args) throws Exception {
-//    public static void main(String[] args) throws IOException {
         Car car = new Car(false, 10000.00, "Ford 9L",
                 new Contact("John K. Smith", "400100, City, Town, Street, house, flat"),
                 new String[] {"Alice", "Bill"});
-//        System.out.println(Car.toXMLview(car));
-//        try (PrintWriter pw = new PrintWriter(new FileWriter(".\\chapter_001\\data\\car.xml",
-//                Charset.forName("UTF-8"), true))) {
-//            pw.write(Car.toXMLview(car));
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
         JAXBContext context = JAXBContext.newInstance(Car.class);
         Marshaller marshaller = context.createMarshaller();
         marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);

@@ -16,17 +16,6 @@ public class SimpleArray<T> implements Iterable<T> {
         this.container = new Object[DEFAULT_CAPACITY];
     }
 
-//    public SimpleArray(int capacity) {
-//        this.modCount = 0;
-//        this.size = 0;
-//        if (capacity >= 0) {
-//            this.capacity = capacity;
-//        } else {
-//            throw new IllegalArgumentException();
-//        }
-//        this.container = new Object[capacity];
-//    }
-
     public T get(int index) {
         Objects.checkIndex(index, size);
         return (T) container[index];

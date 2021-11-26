@@ -60,7 +60,7 @@ public class CSVReader {
                     cellInRaw = 0;
                 }
             }
-            if (argsName.get("out").equals("stdout")) {
+            if ("stdout".equals(argsName.get("out"))) {
                 System.out.println(outData.toString());
             } else  {
                 File file = new File(argsName.get("out"));

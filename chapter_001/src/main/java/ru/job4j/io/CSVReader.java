@@ -79,7 +79,7 @@ public class CSVReader {
         return result;
     }
 
-    public static void main(String[]args) {
+    public static void main(String[] args) {
         ArgsName argsName = ArgsName.of(args);
         CSVReader csvReader = new CSVReader();
         if (csvReader.validation(argsName)) {
